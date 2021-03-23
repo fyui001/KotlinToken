@@ -1,0 +1,43 @@
+# IDE and editor specific files #
+/nbproject
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/shelf
+.idea/libraries
+.idea/gradle.xml
+.idea/modules.xml
+.idea/uiDesigner.xml
+Session.vim
+*.swp
+*~
+.vs
+
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Gradle files
+.gradle/
+build/
+
+# Built application files
+*.apk
+*.ap_
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
