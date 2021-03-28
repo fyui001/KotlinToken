@@ -22,4 +22,6 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed:0.17.7")
     implementation("mysql:mysql-connector-java:${Deps.mysqlVersion}")
     implementation("io.github.cdimascio:dotenv-kotlin:6.2.2")
+    implementation("org.flywaydb:flyway-core:${Deps.flywayVersion}")
+    implementation("info.picocli:picocli:4.2.0")
 }
