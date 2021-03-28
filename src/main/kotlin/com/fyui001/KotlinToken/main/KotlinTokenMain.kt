@@ -2,6 +2,7 @@ package com.fyui001.KotlinToken.main
 
 import com.fyui001.KotlinToken.config.readEnvConfig
 import com.fyui001.KotlinToken.database.runDatabaseMigrate
+import com.fyui001.KotlinToken.models.Token
 import org.koin.core.KoinComponent
 import picocli.CommandLine
 
@@ -23,6 +24,7 @@ class KotlinTokenMain {
             } else {
                 readEnvConfig()
             }
+
             when {
                 command.isDbMigrate -> {
                     runDatabaseMigrate(
@@ -34,7 +36,8 @@ class KotlinTokenMain {
                     )
                 }
             }
-            println("Hello World")
+            val token = Token(config)
+            token.createTokens(10000)
         }
     }
 }
