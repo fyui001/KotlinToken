@@ -1,7 +1,6 @@
 package com.fyui001.KotlinToken.database
 
 import org.flywaydb.core.Flyway
-import javax.sound.sampled.Port
 
 fun runDatabaseMigrate(dbHost: String, dbUser: String, dbPassword: String, dbDatabase: String, dbPort: String) {
     println("====== MIGRATION MODE ======")

@@ -2,7 +2,7 @@ package com.fyui001.KotlinToken.main
 
 import com.fyui001.KotlinToken.config.readEnvConfig
 import com.fyui001.KotlinToken.database.runDatabaseMigrate
-import com.fyui001.KotlinToken.database.Token
+import com.fyui001.KotlinToken.models.Token
 import org.koin.core.KoinComponent
 import picocli.CommandLine
 
@@ -37,7 +37,7 @@ class KotlinTokenMain {
                 }
             }
             val token = Token(config)
-            token.main()
+            token.createTokens(10000)
         }
     }
 }
